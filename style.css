@@ -1,5 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -21,26 +23,26 @@ body {
 
 .gameboard {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
   gap: 5px;
   margin: 20px auto;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='310' height='310' viewBox='0 0 310 310'%3E%3Cpath d='M5,105 Q50,100 105,105 T205,105 T305,105' stroke='%23333' fill='none' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M5,205 Q50,200 105,205 T205,205 T305,205' stroke='%23333' fill='none' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M105,5 Q100,50 105,105 T105,205 T105,305' stroke='%23333' fill='none' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M205,5 Q200,50 205,105 T205,205 T205,305' stroke='%23333' fill='none' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5px;
+  background-position: center;
 }
 
 .cell {
   width: 100px;
   height: 100px;
-  background-color: white;
-  border: 2px solid #333;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 48px;
   cursor: pointer;
-}
-
-.cell:hover {
-  background-color: #eee;
 }
 
 .game-info {
