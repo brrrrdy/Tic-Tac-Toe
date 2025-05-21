@@ -6,6 +6,11 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   align-items: center;
+  background-image: url("images/background.png");
+  background-size: auto;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .container {
